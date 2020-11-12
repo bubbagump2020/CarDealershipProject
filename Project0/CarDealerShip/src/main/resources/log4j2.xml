@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n"></PatternLayout>
+		</Console>
+		<!-- <File name="logfile" fileName="logs/application.logs">
+			<PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+		</File>  -->
+		<!-- <JDBC name="project0" tableName="customer">
+			<ConnectionFactory class="com.application.connections.ConnectionFactory" method=""/> -->
+			<!-- 
+				columns
+
+			-->
+		<!-- </JDBC> -->
+	</Appenders>
+
+	<Loggers>
+		<!-- <Logger level="all" additivity="false" name="com.application.connections.CustomerConnection"> -->
+			<!-- <AppenderRef ref="STDOUT" /> -->
+			<!-- <AppenderRef ref="project0" /> -->
+		<!-- </Logger> -->
+		<Root level="all">
+			<AppenderRef ref="STDOUT" />
+			<!-- <AppenderRef ref="project0" /> -->
+		</Root>
+	</Loggers>
+</Configuration>
